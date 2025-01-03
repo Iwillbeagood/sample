@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # 기존 및 새 패키지 이름 정의
-OLD_PACKAGE="com.example.oldname"
-NEW_PACKAGE="com.example.newname"
+OLD_PACKAGE="jun.sample.app"
+NEW_PACKAGE="jun.sample.newapp"
 
 # 프로젝트 루트 디렉토리
-PROJECT_DIR="/path/to/your/project"
+PROJECT_DIR="/Users/baejunhyeong/AndroidStudioProjects/sample"
 
 # 1. 폴더 이름 변경
-find "$PROJECT_DIR" -type d -path "*/src/main/java/com/example/oldname*" -exec bash -c '
+find "$PROJECT_DIR" -type d -path "*/src/main/java/jun/sample/app*" -exec bash -c '
     OLD_PATH="{}"
-    NEW_PATH=$(echo "$OLD_PATH" | sed "s|com/example/oldname|com/example/newname|g")
+    NEW_PATH=$(echo "$OLD_PATH" | sed "s|jun/sample/app|jun/sample/newapp|g")
     mv "$OLD_PATH" "$NEW_PATH"
 ' \;
 
