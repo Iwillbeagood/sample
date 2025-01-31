@@ -2,7 +2,6 @@
 
 # 기존 및 새 패키지 이름 정의
 OLD_PACKAGE="jun.sample.app"
-NEW_PACKAGE="jun.sample.newapp"
 
 # 프로젝트 루트 디렉토리
 PROJECT_DIR="/Users/baejunhyeong/AndroidStudioProjects/sample"
